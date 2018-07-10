@@ -106,12 +106,12 @@
             //show_powered_by:'false',
             //widgetHost: widgetHost
         },
-        (error, result) => {
+        function (error, result)  {
             console.log(error, result);
         }
     );
 
-  document.getElementById("open-with-file").addEventListener("click", ()=>{
+  document.getElementById("open-with-file").addEventListener("click", function() {
     
     if (widget){
       widget.open(); //cloudinary.WIDGET_SOURCES.DROPBOX);
