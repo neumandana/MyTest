@@ -1,0 +1,228 @@
+<!-- #######  YAY, I AM THE SOURCE EDITOR! #########-->
+<head>
+<meta name=“viewport” content=“width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no”>
+<h1 style="color: #5e9ca0;">This is a <span style="color: #2b2301;">Test Page</span>!</h1>
+<h2 style="color: #2e6c80;">How to use the editor:</h2>
+<p>Paste your documents in the visual editor on the left or your HTML code in the source editor in the right. <br />Edit any of the two areas and see the other changing in real time.&nbsp;</p>
+<p>Click the <span style="background-color: #2b2301; color: #fff; display: inline-block; padding: 3px 10px; font-weight: bold; border-radius: 5px;">Clean</span> button to clean your source code.</p>
+ <meta content='text/html;charset=UTF-8' http-equiv='Content-Type'>
+    <meta content='width=device-width, initial-scale=1' name='viewport'>
+    <script src='https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js'></script>
+
+   <!-- <script src='../src/global/all.js' type='text/javascript'></script> -->
+   <script src="https://widget.cloudinary.com/v2.0/next/global/all.js" type="text/javascript"></script>
+</head>
+<body>
+
+    </div><p>You can try out a live example by clicking on the following button:</p>
+<form id="my_form2">
+<div class="upload_multiple_images_holder" style="margin-bottom: 20px">
+  <a href="#" id="upload_widget_opener" class="cloudinary-button">Upload multiple images</a>
+</div>
+  
+</form>
+<form id="my_form3"</from>
+
+
+<button id="open-with-file">Open with File</button>
+
+<script>
+  
+  
+    cloudinary.setCloudName('sagy');
+    cloudinary.setAPIKey('639871216759211');
+ const widget =   cloudinary.applyUploadWidget(document.getElementById("upload_widget_opener"),
+{
+            upload_preset: "dqd5ps9v",
+            //multiple: true,
+            show_advanced_options:true,
+            //invalidate:true,
+            //show_completed_button: true,
+            //use_filename: true,
+            //unique_filename: true,
+            auto_minimize:true,
+            //language:'dn',
+            get_tags: (cb, prefix) => {  
+                        cb([prefix + "a",  prefix + "1", "test", "test1", "test2", "test3", "test4", "test5", "test6", "test7", "test8", "test9", "test10", "test11", "test12", "test13", "test14", "test15", "test16", "test17", "test18", "test19", "test20"]);
+                        },
+            //cropping: 'server',
+            //cropping_aspect_ratio: 0.5,
+            //cropping_default_selection_ratio: 0.75,
+            //cropping_show_dimensions: true,
+            //cropping_coordinates_mode: 'face',
+            //cropping_aspect_ratio: 16/9,
+            //cropping_show_back_button: true,
+            //keep_widget_open: false,
+            //folder: 'aajhfjfdd',
+            //resource_type: 'image',
+            //secure: false,
+            //max_files: 3,
+            //sources: ['local', 'url','facebook', 'camera', 'image_search', 'dropbox', 'google_photos',  'instagram'],
+                //sources:[cloudinary.WIDGET_SOURCES.CAMERA],
+            //default_source:'instagram',
+            //public_id:'dfdfsd',
+            //tags:['111' , '222'],
+            //context:{title: "title1" , description: "desc1" , blabla: "nlu"},
+            //client_allowed_formats:['pngdfggf'],
+            //max_file_size:1500000,
+            //max_image_width:5000,
+            //max_image_height:500,
+            //min_image_height:5200,
+            //min_image_width:2150,
+            //max_chunk_size:10000000,
+            google_api_key: 'AIzaSyAugh8ddeFTt5ckj9rFcRKNHxem18hKiRo',
+           // facebook_app_id: '175749946422338',
+            //instagram_client_id:'XXX',
+            //dropbox_app_key:'ukblbo1099svutr',
+            search_by_sites:['wsop.com','all','cnnjdsfhkjfdhkjsdfhfkdsjhsdflk987983472349873498734298743298374iudsfyiudfsyiufdshdfisuy98347kjfsdhidsh.com', 'fddfddf.com','fddfdf.com','jkhdfgjhdfgf.com'],
+            search_by_rights:'true',
+            //upload_prefix: uploadPrefix,
+            /*text: {
+               dn: {
+                   "advanced": "fortgeschritten",
+                   "advanced_options": {
+                       "tags_ph": "Tag hinzufügen",
+                   },
+                   local: {
+                       "browse": "Durchsuche",
+                       "main_title": "Daten hochladen",
+                   },
+                   url: {
+                       "inner_title": "Öffentliche URL einer Bilddatei:"
+                   }
+               }
+           },
+           */
+            //form: '#my_form2',
+            //field_name:'sagysagy',
+            //thumbnails: '#my_form3',
+            //thumbnail_transformation:[ {width: 200, height: 200, crop: 'fill'}, {effect: 'sepia'} ],
+            //button_class: 'aaaa',
+            //button_caption:'te&st7467836jajsdaghgdhjgfd8748763yjgfdsjhgdfjhdfsgkjahsgadfhjgfadskhjgadfshjakg',
+            //theme: 'purple',
+            //stylesheet: '.modal#cloudinary-overlay { background-color: rgba(0, 0, 0, 0.7); } #cloudinary-navbar .source.active {border-bottom: 6px solid #b91141;}                          #cloudinary-widget .button, #cloudinary-widget .button:hover { background: #b91141 !important; border-radius: 2px;} .widget .panel.local .drag_area                          .drag_content .label {color:#5d5d5d;} .widget .panel.local .drag_area .drag_content .or {color:#999999;} .thumbnail .error .inner {color: #ff6363; <font->                  </font->size: 18px;} .widget .button.small_button { border-radius: 2px;}',
+            //inline_container:'xxx',
+            //keep_widget_open:'true',
+            //show_powered_by:'false',
+            //widgetHost: widgetHost
+        },
+        (error, result) => {
+            console.log(error, result);
+        }
+    );
+
+  document.getElementById("open-with-file").addEventListener("click", ()=>{
+    
+    if (widget){
+      widget.open(); //cloudinary.WIDGET_SOURCES.DROPBOX);
+      // , 
+                  // {files: ["https://www.cesarsway.com/sites/newcesarsway/files/styles/large_article_preview/public/Common-dog-behaviors-explained.jpg?itok=FSzwbBoi"]})
+    }
+  });
+      
+
+
+</script>
+
+<p><img src="https://res.cloudinary.com/sagy/image/upload/e_vibrance:-61/v1502017742/gzdsiqmmqb3qhzhfc9w5.jpg" alt="" width="284" height="177" /></p>
+<h2 style="color: #2e6c80;">Some useful features:</h2>
+<ol style="list-style: none; font-size: 14px; line-height: 32px; font-weight: bold;">
+<li style="clear: both;"><img style="float: left;" src="https://html-online.com/img/01-interactive-connection.png" alt="interactive connection" width="45" /> Interactive source editor</li>
+<li style="clear: both;"><img style="float: left;" src="https://html-online.com/img/02-html-clean.png" alt="html cleaner" width="45" /> HTML Cleaning</li>
+<li style="clear: both;"><img style="float: left;" src="https://html-online.com/img/03-docs-to-html.png" alt="Word to html" width="45" /> Word to HTML conversion</li>
+<li style="clear: both;"><img style="float: left;" src="https://html-online.com/img/04-replace.png" alt="replace text" width="45" /> Find and Replace</li>
+<li style="clear: both;"><img style="float: left;" src="https://html-online.com/img/05-gibberish.png" alt="gibberish" width="45" /> Lorem-Ipsum generator</li>
+<li style="clear: both;"><img style="float: left;" src="https://html-online.com/img/6-table-div-html.png" alt="html table div" width="45" /> Table to DIV conversion</li>
+</ol>
+<p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</p>
+<h2 style="color: #2e6c80;">Cleaning options:</h2>
+<table class="editorDemoTable">
+<thead>
+<tr>
+<td>Name of the feature</td>
+<td>Example</td>
+<td>Default</td>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Remove tag attributes</td>
+<td><img style="margin: 1px 15px;" src="images/smiley.png" alt="laughing" width="40" height="16" /> (except <strong>img</strong>-<em>src</em> and <strong>a</strong>-<em>href</em>)</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>Remove inline styles</td>
+<td><span style="color: green; font-size: 13px;">You <strong style="color: blue; text-decoration: underline;">should never</strong>&nbsp;use inline styles!</span></td>
+<td><strong style="font-size: 17px; color: #2b2301;">x</strong></td>
+</tr>
+<tr>
+<td>Remove classes and IDs</td>
+<td><span id="demoId">Use classes to <strong class="demoClass">style everything</strong>.</span></td>
+<td><strong style="font-size: 17px; color: #2b2301;">x</strong></td>
+</tr>
+<tr>
+<td>Remove all tags</td>
+<td>This leaves <strong style="color: blue;">only the plain</strong> <em>text</em>. <img style="margin: 1px;" src="images/smiley.png" alt="laughing" width="16" height="16" /></td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>Remove successive &amp;nbsp;s</td>
+<td>Never use non-breaking spaces&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;to set margins.</td>
+<td><strong style="font-size: 17px; color: #2b2301;">x</strong></td>
+</tr>
+<tr>
+<td>Remove empty tags</td>
+<td>Empty tags should go!</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>Remove tags with one &amp;nbsp;</td>
+<td>This makes&nbsp;no sense!</td>
+<td><strong style="font-size: 17px; color: #2b2301;">x</strong></td>
+</tr>
+<tr>
+<td>Remove span tags</td>
+<td>Span tags with <span style="color: green; font-size: 13px;">all styles</span></td>
+<td><strong style="font-size: 17px; color: #2b2301;">x</strong></td>
+</tr>
+<tr>
+<td>Remove images</td>
+<td>I am an image: <img src="images/smiley.png" alt="laughing" /></td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>Remove links</td>
+<td><a href="https://html-online.com">This is</a> a link.</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>Remove tables</td>
+<td>Takes everything out of the table.</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>Replace table tags with structured divs</td>
+<td>This text is inside a table.</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>Remove comments</td>
+<td>This is only visible in the source editor <!-- HELLO! --></td>
+<td><strong style="font-size: 17px; color: #2b2301;">x</strong></td>
+</tr>
+<tr>
+<td>Encode special characters</td>
+<td><span style="color: red; font-size: 17px;">&hearts;</span> <strong style="font-size: 20px;">☺ ★</strong> &gt;&lt;</td>
+<td><strong style="font-size: 17px; color: #2b2301;">x</strong></td>
+</tr>
+<tr>
+<td>Set new lines and text indents</td>
+<td>Organize the tags in a nice tree view.</td>
+<td>&nbsp;</td>
+</tr>
+</tbody>
+</table>
+<p><strong>&nbsp;</strong></p>
+<p><strong>Save this link into your bookmarks and share it with your friends. It is all FREE! </strong><br /><strong>Enjoy!</strong></p>
+<p><strong>&nbsp;</strong></p>
+</body>
