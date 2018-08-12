@@ -41,7 +41,7 @@
         });
      }
     function getSignature (cb, params){
-        makeAjaxRequest("https://3be99b2f.ngrok.io/signature", params,
+        makeAjaxRequest("http://3be99b2f.ngrok.io/signature", params,
             function (response) {
                 cb(response.signature)
             });
