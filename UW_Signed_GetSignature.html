@@ -20,28 +20,29 @@
   
 </form>
 <form id="my_form3"</from>
+
 <script>
-  
-      const makeAjaxRequest = (url, data, cb) =>
+     function makeAjaxRequest (url, data, cb) {
         $.ajax({
-            url,
+            url: url,
             type: "GET",
             dataType: "json",
-            data,
-            complete: () => {
+            data: data,
+            complete: function() {
                 console.log("request completed - " + url);
             },
             success: cb,
-            error: (xhr, status, error) => {
+            error: function (xhr, status, error) {
                 console.log(xhr, status, error);
             }
         });
-
-    const getSignature = (cb, params) =>
+     }
+    function getSignature (cb, params){
         makeAjaxRequest("http://localhost:9991/signature", params,
-            (response) =>
-                cb(response.signature));
-  
+            function (response) {
+                cb(response.signature)
+            });
+    }
        
 
   
