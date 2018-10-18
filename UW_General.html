@@ -23,7 +23,7 @@
     cloudinary.setCloudName('dananeuman');
   // cloudinary.setAPIKey('358116175914165');
     cloudinary.applyUploadWidget(document.getElementById("upload_widget_opener"),
-{       preBatch: (cb, data) =>{ cb();},
+{       preBatch: (cb, data) =>{ cb({cancel:true});},
           // upload_preset: "UW2_all",
       upload_preset: "preset_test",
          //  multiple: true,
